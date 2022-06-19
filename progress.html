@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width,initial-scale = 1.0">
+        <meta name="description" content="demo">
+        <title>Alcohol Log</title>
+
+
+
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+            *{
+                background-color:rgb(87, 130, 137);
+            }
+            h1{
+                color:rgb(255, 154, 154);
+            }
+            h2{
+                color:rgb(255, 199, 199);
+            }
+            h3{
+                color:rgb(255, 199, 199);
+            }
+
+            li, a, button{
+                font-family:'Kdam Thmor Pro', sans-serif;
+                color:rgb(255, 255, 255);
+            }
+
+            .btn{
+                border: 1px solid;
+                transition:ease-out 0.3s;
+            }
+            .btn:hover{
+                color:rgb(255, 98, 98);
+            }
+
+            html,
+            body{
+                height:100%;
+                height: 1200px;
+            }
+
+            img{
+                width: 200px;
+                border-radius: 5px;
+            }
+
+            p.subtitle{
+                font-weight:bold;
+            }
+            header.nav_links{
+                list-style: none;
+            }
+            .nav_links li{
+                display:inline-block;
+            }
+            .nav_links li a {
+                transition: all 0.3s ease 0s;
+            }
+            .nav_links li a:hover{
+                color:rgb(255, 98, 98);
+            }
+
+            p.whitetexts{
+                color:rgb(255, 255, 255);
+            }
+
+            displayed_level{
+                color: rgb(255, 255, 255);
+            }
+
+
+            nav_links{
+                background: rgb(255, 229, 229);
+            }
+            div.hi_name{
+                display: inline-block;
+            }
+
+        </style>
+
+
+
+    </head>
+    <body> 
+
+            <header>
+                <h1>ALCOHOL LOG</h1>
+                <div class = "hi_name">
+                <h2>Hi,</h2>
+                    <h2 id = "displayed_name"></h2>
+                </div>
+                <nav>
+                    <ul class = "nav_links">
+                        <li><a href="progress.html">Progress</a></li>
+                        <li><a href="meeting.html">Meeting</a></li>
+                        <li><a href="sponsorship.html">Sponsorship</a></li>
+                        <li><a href="dailyRecord.html">Daily record</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+                <img src = "images/step.png">
+                <p class = "whitetexts"> You are currently at step level:</p>
+
+                <p id = "displayed_level"></p>
+
+                <a href = "changelevel.html">
+                    <button class = "btn" > Change your level</button>
+                </a>
+                <p class = "leveltexts">Keep up the great work!</p>
+
+
+
+
+
+                <div>
+                    <h3>Readings Provided For You</h3>
+                    <p class = whitetexts id = "article"> Article related to your level:</p>
+                    <div>
+                        <embed id = 'embedArticle' src = "files/en_step1.pdf" type = "application/pdf" width = 50% height = 400px/>
+                    </div>
+                    <p>Citation: This article is derived from Alcoholics Anonymous website: https://www.aa.org/twelve-steps-twelve-traditions</p>
+                    If wish to see this original source:
+                    <a href = "https://www.aa.org/twelve-steps-twelve-traditions">
+                        <p>12 steps 12 traditions page from Alcoholics Anomymous official website</p>
+                    </a>
+                </div>
+    </body>
+
+    <script src = "User.js"></script>
+    <script src = "login.js"></script>
+    <script src = "progress.js"></script>
+
+</html>

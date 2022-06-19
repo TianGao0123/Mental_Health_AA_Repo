@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <style>
+    
+    body{
+        background: rgb(87, 130, 137);
+        display:flex;
+        padding:0px;
+        margin:100px;
+        justify-content: center;
+    }
+    body.slideContainer{
+        width: 70%;
+    }
+    
+    </style>
+    
+    <body>
+        <div class = "slideContainer">
+        <input type = "radio" name = "Meeting" value = "online" id = "online_choise" />online</br>
+        <input type = "radio" name = "Meeting" value = "in_person" id = "inperson_choice" />in person</br>
+        </div>
+            <button class = "btn" id ="confirmBtn" onclick="confirmMeeting()">Confirm</button>
+
+        <a href = "meeting.html">
+            <button class = "btn" id ="GobackBtn" >Go back</button>
+        </a>
+
+
+
+</body>
+<script src = "User.js"></script>
+<script src = "changemeeting.js"></script>
+</html>

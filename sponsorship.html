@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+    *{
+        background-color:rgb(87, 130, 137);
+    }
+    h1{
+        color:rgb(255, 154, 154);
+    }
+    h2{
+        color:rgb(255, 199, 199);
+    }
+
+    li, a, button{
+        font-family:'Kdam Thmor Pro', sans-serif;
+        color:rgb(255, 255, 255);
+    }
+
+    .btn{
+        border: 1px solid;
+        transition:ease-out 0.3s;
+    }
+    .btn:hover{
+        color:rgb(255, 98, 98);
+    }
+
+    html,
+    body{
+        height:100%;
+        height: 1200px;
+    }
+
+    img{
+        width: 200px;
+        border-radius: 5px;
+    }
+
+    p.subtitle{
+        font-weight:bold;
+    }
+    header.nav_links{
+        list-style: none;
+    }
+    .nav_links li{
+        display:inline-block;
+    }
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+    .nav_links li a:hover{
+        color:rgb(255, 98, 98);
+    }
+    div.sponInfo.embed.sponsorpdf{
+        visibility: hidden;
+    }
+
+    p.leveltexts{
+        color:rgb(255, 255, 255);
+    }
+    displayed_level{
+        color: rgb(255, 255, 255);
+    }
+
+
+    nav_links{
+        background: rgb(255, 229, 229);
+    }
+
+    .noSpr{
+            height:100px;
+            width: 250px;
+            overflow-y: auto;
+
+        }
+
+        .noSpr a {
+            background-color:rgb(255, 154, 154);
+            display: block;
+        }
+
+</style>
+
+
+
+
+
+
+
+<body>
+<header>
+    <h1>ALCOHOL LOG</h1>
+        <h2 id = "displayed_name"></h2>
+    <nav>
+        <ul class = "nav_links">
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="meeting.html">Meeting</a></li>
+            <li><a href="sponsorship.html">Sponsorship</a></li>
+            <li><a href="dailyRecord.html">Daily record</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+        </ul>
+    </nav>
+
+</header>
+<img src="images/group.jpeg" alt="">
+
+    <p> Do you have a sponsor? </p>
+    <p><span id = "displayed_sponsor"></span></p>
+    <a href = "changesponsor.html">
+        <button class = "btn" > Change your sponsorship status</button>
+    </a>
+    <p id = "sponText">
+        A Sponsor is the person who'll teach you how to progress forward. We encourage you to find a sponsor.
+        Here some sponsors we found suitable for you, please feel free to contact them:
+    </p>
+    <div class = "noSpr" id = "noSponInfo">
+        <a href = "sponsorInfoPage.html" class = "active"> Sponsor1 </a>
+        <a href = "sponsorInfoPage.html" class = "active"> Sponsor2 </a>
+        <a href = "sponsorInfoPage.html" class = "active"> Sponsor3 </a>
+        <a href = "sponsorInfoPage.html" class = "active"> Sponsor4 </a>
+        <a href = "sponsorInfoPage.html" class = "active"> Sponsor5 </a>
+        <a href = "sponsorInfoPage.html" class = "active"> Sponsor6 </a>
+        <a href = "sponsorInfoPage.html" class = "active"> Sponsor7 </a>
+        <a href = "sponsorInfoPage.html" class = "active"> Sponsor8 </a>
+        <a href = "sponsorInfoPage.html" class = "active"> Sponsor9 </a>
+        <a href = "sponsorInfoPage.html" class = "active"> Sponsor10 </a>
+        <a href = "sponsorInfoPage.html" class = "active"> Sponsor11 </a>
+    </div>
+
+    <div class = "yesSpr" id = "yesSponInfo">
+        <embed id = "sponsorpdf" src="files/p-15_Q&AonSpon.pdf" type="application/pdf"width = 50% height = 400px>
+    <br>
+    <p >This pdf is from https://www.aa.org/questions-and-answers-sponsorship</p>
+    If wish to see this original source:
+    <a href = "https://www.aa.org/questions-and-answers-sponsorship">
+        <p>Sponsorship page on Alcohlics Anonymous offical website</p>
+    </a>
+    </div>
+    
+</body>
+
+<script src = "User.js"></script>
+<script src = "sponsorship.js"></script>
+</html>

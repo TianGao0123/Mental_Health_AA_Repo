@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+        *{
+            background-color:rgb(87, 130, 137);
+        }
+        h1{
+            color:rgb(255, 154, 154);
+        }
+        h2{
+            color:rgb(255, 199, 199);
+        }
+
+        li, a, button{
+            font-family:'Kdam Thmor Pro', sans-serif;
+            color:rgb(255, 255, 255);
+        }
+
+        .btn{
+            border: 1px solid;
+            transition:ease-out 0.3s;
+        }
+        .btn:hover{
+            color:rgb(255, 98, 98);
+        }
+
+        html,
+        body{
+            height:100%;
+        }
+
+        img{
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        p.subtitle{
+            font-weight:bold;
+        }
+        header.nav_links{
+            list-style: none;
+        }
+        .nav_links li{
+            display:inline-block;
+        }
+        .nav_links li a {
+            transition: all 0.3s ease 0s;
+        }
+        .nav_links li a:hover{
+            color:rgb(255, 98, 98);
+        }
+
+        p.leveltexts{
+            color:rgb(255, 255, 255);
+        }
+        displayed_level{
+            color: rgb(255, 255, 255);
+        }
+
+
+        nav_links{
+            background: rgb(255, 229, 229);
+        }
+
+    </style>
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Time', 'Amount', 'some Other Loging Data'],
+      ['June 15',  1000,      400],
+      ['June 16',  1170,      460],
+      ['June 17',  660,       1120]
+    ]);
+
+    var options = {
+      title: 'Amount Log from past to current',
+      curveType: 'function',
+      legend: { position: 'bottom' },
+      hAxis:{title: 'time' }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    chart.draw(data, options);
+  }
+</script>
+
+
+
+</head>
+<body> 
+
+        <header>
+            <h1>AlCOHOL LOG</h1>
+                <h2 id = "displayed_name"></h2>
+            <nav>
+                <ul class = "nav_links">
+                    <li><a href="progress.html">Progress</a></li>
+                    <li><a href="meeting.html">Meeting</a></li>
+                    <li><a href="sponsorship.html">Sponsorship</a></li>
+                    <li><a href="dailyRecord.html">Daily record</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form>
+            <div>
+                <label>How much alcohol in total you drank today?(in ml)  </label>
+                <input type = "text" id = "input_alcohol" placeholder = "provide a number in ml" required>
+                <button onclick = "updateRecord()">record this</button>
+                <button> reset</button>
+               </div>
+
+    </form>
+    <div id="curve_chart" style="width: 500px; height: 250px"></div>
+
+
+    
+</body>
+
+<script src = "User.js"></script>
+<script src = "dailyRecord.js"></script>
+</html>

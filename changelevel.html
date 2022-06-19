@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+body{
+    background: rgb(87, 130, 137);
+    display:flex;
+    padding:0px;
+    margin:100px;
+    justify-content: center;
+}
+body.slideContainer{
+    width: 70%;
+}
+
+</style>
+
+<body>
+    <div class = "slideContainer">
+    <input type = "range" list = "tickmarks" min = "1" max = "12" id = "mySlider" step = "1" onchange="showValue(this.value); ChangeScrollBar(this.value);">
+    <p>level:<span id = "value"></span></p>
+    <datalist id="tickmarks">
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10"></option>
+        <option value="11"></option>
+        <option value="12"></option>
+        </datalist>
+    </div>
+    <a href = "progress.html">
+        <button class = "btn" > Confirm and go back</button>
+    </a>
+</body>
+
+<script src = "User.js"></script>
+<script src = "changelevel.js"></script>
+
+
+
+
+</html>

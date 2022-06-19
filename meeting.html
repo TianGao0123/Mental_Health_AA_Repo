@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+        *{
+            background-color:rgb(87, 130, 137);
+        }
+        h1{
+            color:rgb(255, 154, 154);
+        }
+        h2{
+            color:rgb(255, 199, 199);
+        }
+    
+        li, a, button{
+            font-family:'Kdam Thmor Pro', sans-serif;
+            color:rgb(255, 255, 255);
+        }
+    
+        .btn{
+            border: 1px solid;
+            transition:ease-out 0.3s;
+        }
+        .btn:hover{
+            color:rgb(255, 98, 98);
+        }
+    
+        html,
+        body{
+            height:100%;
+            height:1000px;
+        }
+    
+        img{
+            width: 200px;
+            border-radius: 5px;
+        }
+        img.small{
+            width: 100px;
+        }
+    
+        p.subtitle{
+            font-weight:bold;
+        }
+        header.nav_links{
+            list-style: none;
+        }
+        .nav_links li{
+            display:inline-block;
+        }
+        .nav_links li a {
+            transition: all 0.3s ease 0s;
+        }
+        .nav_links li a:hover{
+            color:rgb(255, 98, 98);
+        }
+    
+        p.whitetexts{
+            color:rgb(255, 255, 255);
+        }
+        displayed_level{
+            color: rgb(255, 255, 255);
+        }
+    
+
+        .vertical_menu{
+            height:180px;
+            width:500px;
+            overflow-y: auto;
+
+        }
+
+        .vertical_menu a {
+            background-color:rgb(255, 154, 154);
+            display: block;
+
+
+        }
+
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    <body>
+    <header>
+        <h1>ALCOHOL LOG</h1>
+            <h2>Hello, my name is </h2>
+            <h2 id = "displayed_name"></h2>
+        <nav>
+            <ul class = "nav_links">
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="meeting.html">Meeting</a></li>
+                <li><a href="sponsorship.html">Sponsorship</a></li>
+                <li><a href="dailyRecord.html">Daily record</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src = "images/meeting.jpeg">
+
+        <p> Do you want to participate in online meeting or meeting in-person? </p>
+        <p><span id = "displayed_meetingStatus"></span></p>
+        <a href = "changemeeting.html">
+            <button class = "btn" > Change your sponsorship status</button>
+        </a>
+
+        <p id = "MeetingText">
+            Keep coming back!
+            Keep attending online meeting can help you become better! 
+            But still we encourage you to attend meeting in person which can help you progress even faster!
+            Below are some online meeting we think suitable for you:
+            Find a meeting colse to you here!
+        </p>
+
+
+        <div class = "vertical_menu">
+            <a href = "meetingInfoPage.html" class = "active"> Meetings1 </a>
+            <a href = "meetingInfoPage.html" class = "active"> Meetings2 </a>
+            <a href = "meetingInfoPage.html" class = "active"> Meetings3 </a>
+            <a href = "meetingInfoPage.html" class = "active"> Meetings4 </a>
+            <a href = "meetingInfoPage.html" class = "active"> Meetings5 </a>
+            <a href = "meetingInfoPage.html" class = "active"> Meetings6 </a>
+            <a href = "meetingInfoPage.html" class = "active"> Meetings7 </a>
+            <a href = "meetingInfoPage.html" class = "active"> Meetings8 </a>
+            <a href = "meetingInfoPage.html" class = "active"> Meetings9 </a>
+            <a href = "meetingInfoPage.html" class = "active"> Meetings10 </a>
+            <a href = "meetingInfoPage.html" class = "active"> Meetings11 </a>
+
+
+        </div>
+        <br>
+
+
+        <div>
+            <a href=
+            "https://www.aa.org/find-aa/north-america?lat=33.6913751&lng=-117.7901088&geolocation_geocoder_address=Irvine%2C+CA+92604%2C+USA">
+               Or Find a meeting in Alcoholics Anonymous Here
+            </a>
+        </div>
+        <br>
+
+
+        <div>
+            <p class = "whitetexts">
+            Searching for an app for meeting?
+            Download the Meeting Guide App provided by Alcoholics Anonymous here!
+            </p>
+            <a href=
+            "https://www.aa.org/meeting-guide-app?gclid=CjwKCAjw77WVBhBuEiwAJ-YoJJFr73JlgzlM3SzgAK8lIWXb7MVbwupbUcifNm8UWEfkBuFmJ1RfLBoCghwQAvD_BwE">
+            <img class = "small"src="images/MGicon.png" alt="">
+        </a>
+        </div>
+    
+        
+    </body>
+
+<script src = "User.js"></script>
+<script src = "meeting.js"></script>
+</html>
